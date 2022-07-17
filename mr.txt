@@ -1,0 +1,5 @@
+Connection information for default credential.
+Connection info string:
+   "dbname=d8fpu6aq3ega1i host=ec2-3-219-229-143.compute-1.amazonaws.com port=5432 user=eisbtcwgrbeoov password=307e60953a4d30b73859976f247c1d0437dd6bcefe5bc231f02eaa089b8c7eab sslmode=require"
+Connection URL:
+   postgres://eisbtcwgrbeoov:307e60953a4d30b73859976f247c1d0437dd6bcefe5bc231f02eaa089b8c7eab@ec2-3-219-229-143.compute-1.amazonaws.com:5432/d8fpu6aq3ega1i

@@ -1,0 +1,14 @@
+POST /api/members/all 
+Host: localhost:3000
+Content-Type: application/json
+Content-Length: 189
+
+{
+    "id":"001",
+    "firstName": "winston",
+    "lastName": "winston",
+    "email":"winstyngyen@gmail.com",
+    "gender": "male",
+    "dob":"25/01/90",
+    "contact":"033022021"
+}
