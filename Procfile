@@ -1,2 +1,2 @@
 release: yarn add @nestjs/core @nestjs/common rxjs reflect-metadata
-web: yarn start
+web: yarn run start:prod
