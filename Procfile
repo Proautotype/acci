@@ -1,2 +1,2 @@
-release: yarn install
+release: yarn install nest
 web: yarn start
