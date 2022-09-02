@@ -5,5 +5,5 @@ export default class magnoliaCompanyDTO{
     name: string
     email: string
     @IsNotEmpty()
-    tel: string
+    tell: string
 }
