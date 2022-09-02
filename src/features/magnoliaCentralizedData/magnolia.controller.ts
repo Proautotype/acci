@@ -17,6 +17,7 @@ export default class magnoliaController{
       console.log(dataBody);  
       try {
         this.mgnlService.saveData(dataBody).then(res=>{
+            console.log("res",res)
             return HttpStatus.ACCEPTED;
         })
         ;
