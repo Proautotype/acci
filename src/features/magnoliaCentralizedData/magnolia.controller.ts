@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Post, UsePipes, ValidationPipe } from "@nestjs/common";
+import { BadRequestException, Body, Controller, Get, HttpStatus, Post, UsePipes, ValidationPipe } from "@nestjs/common";
 import magnoliaCompanyDTO from "src/DB/Models/Magnolia/magnoliaCompanyDTO";
 import magnoliaService from "./magnolia.service";
 
@@ -15,5 +15,11 @@ export default class magnoliaController{
     @UsePipes(ValidationPipe)
     saveData(@Body() dataBody: magnoliaCompanyDTO){
       console.log(dataBody);  
+      try {
+        this.mgnlService.saveData(dataBody);
+        return dataBody;
+      } catch (error) {
+        return new BadRequestException("Could not save")
+      }
     }
 }
