@@ -16,8 +16,10 @@ export default class magnoliaController{
     saveData(@Body() dataBody: magnoliaCompanyDTO){
       console.log(dataBody);  
       try {
-        this.mgnlService.saveData(dataBody);
-        return dataBody;
+        this.mgnlService.saveData(dataBody).then(res=>{
+            return HttpStatus.ACCEPTED;
+        })
+        ;
       } catch (error) {
         return new BadRequestException("Could not save")
       }
